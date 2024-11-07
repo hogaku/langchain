@@ -320,6 +320,13 @@ if TYPE_CHECKING:
     from langchain_community.document_loaders.obsidian import (
         ObsidianLoader,
     )
+    from langchain_community.document_loaders.oci_object_storage_container import (
+        OCIObjectStorageContainerLoader
+    )
+    from langchain_community.document_loaders.oci_object_storage_file import (
+        OCIObjectStorageFileLoader
+    )
+
     from langchain_community.document_loaders.odt import (
         UnstructuredODTLoader,
     )
@@ -638,6 +645,8 @@ _module_lookup = {
     "OBSDirectoryLoader": "langchain_community.document_loaders.obs_directory",
     "OBSFileLoader": "langchain_community.document_loaders.obs_file",
     "ObsidianLoader": "langchain_community.document_loaders.obsidian",
+    "OCIObjectStorageContainerLoader" : "langchain_community.document_loaders.oci_object_storage_container",
+    "OCIObjectStorageFileLoader" : "langchain_community.document_loaders.oci_object_storage_file",
     "OneDriveFileLoader": "langchain_community.document_loaders.onedrive_file",
     "OneDriveLoader": "langchain_community.document_loaders.onedrive",
     "OnlinePDFLoader": "langchain_community.document_loaders.pdf",
@@ -844,6 +853,8 @@ __all__ = [
     "OBSDirectoryLoader",
     "OBSFileLoader",
     "ObsidianLoader",
+    "OCIObjectStorageContainerLoader",
+    "OCIObjectStorageFileLoader",
     "OneDriveFileLoader",
     "OneDriveLoader",
     "OnlinePDFLoader",
